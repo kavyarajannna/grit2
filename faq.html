@@ -209,25 +209,44 @@
             padding-left: 2rem;
         }
 
-        .industries span {
-            font-weight: bold;
-            display: block;
-            margin-top: 5px;
-            color: #333;
-        }
 
-        .global-partners {
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
+      
+        .industries {
+    max-width: 600px; /* Adjust as needed */
+    margin: 0 auto; /* Center the text */
+    text-align: left; /* Align text properly */
+    white-space: normal; /* Ensure wrapping */
+    word-break: break-word; /* Prevent overflow issues */
+}
 
-        .global-partners img {
-            width: 20px;
-            height: 15px;
-            vertical-align: middle;
-        }
+
+.global-partner-wrapper {
+    max-width: 600px; /* Set a max width */
+    margin-left: 2rem; /* Adjust margin for proper alignment */
+}
+
+.global-partners {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Add spacing between items */
+    align-items: center;
+    justify-content: flex-start; /* Align content to the left */
+}
+
+.global-partners span {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Adjust spacing between flag and text */
+    white-space: nowrap; /* Prevent text from breaking into multiple lines */
+}
+
+.global-partners img {
+    width: 20px; 
+    height: 15px;
+}
+
+
+
 
         /* Button Styling */
         button {
@@ -802,11 +821,22 @@
         </div>
 
         <div class="faq-item">
-            <h3>Q3. Q3. Where are your offices located?</h3>
-            <p><strong>India : </strong>Bangalore & Mysore </p>
-            <p class="industries"><strong>Global Partners : </strong><span>UAE | USA | Canada | South Korea 
-                    </span></p>
+            <h3>Q3. Where are your offices located?</h3>
+            <p><strong>India:</strong> Bangalore & Mysore</p>
+            <div class="global-partner-wrapper">
+                <p  class="industries"><strong>Global Partners:</strong></p>
+                <div class="global-partners">
+                    <span>UAE <img src="United Arab Emirates (AE) (1).png" alt="UAE Flag"></span> |
+                    <span>USA <img src="United States of America (US).png" alt="USA Flag"></span> |
+                    <span>Canada <img src="Canada (CA).png" alt="Canada Flag"></span> |
+                    <span>South Korea <img src="South Korea (KR).png" alt="South Korea Flag"></span>
+                </div>
+            </div>
+            
         </div>
+        
+       
+
 
 
 
