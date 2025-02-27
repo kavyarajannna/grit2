@@ -14,7 +14,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: Arial, sans-serif;
+            font-family: 'Inter', sans-serif;
         }
 
         body {
@@ -45,16 +45,19 @@
         }
 
         .menu-icon {
-    display: none;
-    font-size: 30px;
-    cursor: pointer;
-    color: white; /* Default color before scrolling */
-    transition: color 0.3s ease; /* Smooth transition */
-}
+            display: none;
+            font-size: 30px;
+            cursor: pointer;
+            color: white;
+            /* Default color before scrolling */
+            transition: color 0.3s ease;
+            /* Smooth transition */
+        }
 
-header.scrolled .menu-icon {
-    color: black; /* Change to black when scrolled */
-}
+        header.scrolled .menu-icon {
+            color: black;
+            /* Change to black when scrolled */
+        }
 
 
 
@@ -83,48 +86,20 @@ header.scrolled .menu-icon {
         }
 
         nav a.cta-button {
-    background-color: #5107B8;
-    color: white !important;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: 600;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.header.scrolled nav a.cta-button {
-    color: white !important; /* Ensures text stays white */
-}
-
-        .hero-section {
-            text-align: center;
-            position: relative;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            padding: 20px;
-            padding-bottom: 60px;
-        }
-
-        .hero-section h1 {
-            text-shadow: 2px 2px 4px rgb(0, 0, 0); /* X-offset, Y-offset, blur-radius, color */
-
-            text-align: left;
-            color: white;
-            font-size: 36px;
+            background-color: #5107B8;
+            color: white !important;
+            padding: 10px 20px;
+            border-radius: 5px;
             font-weight: 600;
-            margin-bottom: 20px;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
 
-        .hero-background img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: -1;
+        .header.scrolled nav a.cta-button {
+            color: white !important;
+            /* Ensures text stays white */
         }
+
+
 
         @media (max-width: 768px) {
             header {
@@ -133,7 +108,7 @@ header.scrolled .menu-icon {
 
             .menu-icon {
                 display: block;
-                
+
             }
 
             #nav-menu {
@@ -206,21 +181,29 @@ header.scrolled .menu-icon {
         }
 
         .hero-section h1 {
+            text-shadow: 2px 2px 4px rgb(0, 0, 0);
+            /* X-offset, Y-offset, blur-radius, color */
+            letter-spacing: -0.02em;
+            /* Approx. -2% letter spacing */
+            line-height: 57.6px;
             text-align: left;
             color: white;
-            font-size: 36px;
-            font-weight: 600;
+            font-size: 48px;
+            font-weight: 700;
             margin-bottom: 20px;
         }
 
-        .hero-section p {
-            text-shadow: 2px 2px 4px rgb(0, 0, 0); /* X-offset, Y-offset, blur-radius, color */
 
+        .hero-section p {
+            text-shadow: 2px 2px 4px rgb(0, 0, 0);
+            /* X-offset, Y-offset, blur-radius, color */
+            font-weight: 400;
             padding-right: 50%;
+            line-height: 24px;
             text-align: left;
             color: white;
             margin-top: 10px;
-            font-size: 14px;
+            font-size: 20px;
             opacity: 0.8;
         }
 
@@ -410,10 +393,10 @@ header.scrolled .menu-icon {
             max-width: 100%;
             /* Ensure it doesn't exceed container width */
             /* padding: 15px; */
-            padding:1rem 0;
+            padding: 1rem 0;
             background: #f9f9f9;
             border-radius: 8px;
-           
+
             cursor: pointer;
             box-sizing: border-box;
             /* Adjust to account for padding and borders */
@@ -535,9 +518,12 @@ header.scrolled .menu-icon {
         }
 
         .label-text {
+            font-size: 16px;
+            color: #1E1E1E;
             display: inline-block;
-            font-weight: bold;
+            font-weight: 600;
             margin-bottom: 5px;
+            line-height: 22.4px;
             border: none;
             /* Ensure no border is applied */
             outline: none;
@@ -571,16 +557,20 @@ header.scrolled .menu-icon {
         }
 
         .contact-info1 h2 {
-            font-size: 3rem;
- padding-bottom: 3rem;
+            letter-spacing: -0.03em;
+            font-size: 72px;
+            padding-bottom: 3rem;
+            line-height: 86.4px;
+            font-weight: 700;
         }
 
         .contact-info1 p {
             font-size: 16px;
             margin: 15px 0;
+            line-height: 22.4px;
             /* Consistent margin */
             color: #5A5A5A;
-            font-weight: bold;
+            font-weight: 600;
         }
 
 
@@ -630,6 +620,16 @@ header.scrolled .menu-icon {
             /* Ensures padding doesn’t add to width */
         }
 
+        .card45 h2{
+            color:#5107B8;
+            letter-spacing: -0.02em;
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 28.8px;
+            margin-bottom: 3rem;
+
+        }
+
         .highlight45 {
             font-weight: bold;
             line-height: 2rem;
@@ -670,42 +670,54 @@ header.scrolled .menu-icon {
         }
 
         .future-proof-section .headline60 {
-            font-size: 2vw;
+
+            font-weight: 900;
+            line-height: 38.4px;
+            font-size: 32px;
             /* Responsive font size */
-            font-weight: bold;
-            color: #333;
+       
+            color: #000000;
         }
 
         .future-proof-section .subtext60 {
-            font-weight: bold;
-            font-size: 2vw;
-            color: #333;
+            font-weight: 900;
+            line-height: 38.4px;
+            font-size: 32px;
+            color: #000000;
             margin-top: 10px;
         }
 
         .future-proof-section .button60 {
-            display: inline-block;
-            background-color: #5107B8;
-            color: white;
-            padding: 12px 28px;
-            font-size: 1.5vw;
-            font-weight: 600;
-            text-transform: uppercase;
-            border-radius: 5px;
-            margin-top: 15px;
-            text-decoration: none;
-            cursor: pointer;
-            transition: background-color 0.3s, transform 0.2s;
-        }
+    display: inline-flex; /* Allows better control of spacing */
+    align-items: center; /* Vertically aligns text and arrow */
+    justify-content: center;
+    background-color: #5107B8;
+    color: white;
+    width: 432px; /* Fixed width */
+    height: 72px; /* Fixed height */
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+    border-radius: 4px;
+    margin-top: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    gap: 10px; /* Space between text and arrow */
+}
 
-        .future-proof-section .button60:hover {
-            background-color: #3a006e;
-        }
+.future-proof-section .button60:hover {
+    background-color: #3a006e;
+}
 
-        .future-proof-section .button60:hover .arrow {
-            transform: translateX(5px);
-            transition: transform 0.3s ease-in-out;
-        }
+.future-proof-section .button60 .arrow {
+    transition: transform 0.3s ease-in-out;
+}
+
+.future-proof-section .button60:hover .arrow {
+    transform: translateX(5px);
+}
+
 
         /* Responsive adjustments */
         @media (max-width: 768px) {
@@ -752,6 +764,7 @@ header.scrolled .menu-icon {
             }
         }
 
+
         .container-wrapper .container {
             padding: 0.5% 5%;
             display: grid;
@@ -762,9 +775,11 @@ header.scrolled .menu-icon {
 
         .container-wrapper .container-heading {
             margin-top: 20px;
+            letter-spacing: -0.02em;
+            line-height: 28.8px;
             text-align: left;
-            font-size: 1.5rem;
-            font-weight: bold;
+            font-size: 24px;
+            font-weight: 800;
             margin-bottom: 20px;
             color: #5107B8;
             padding-left: 5%;
@@ -788,6 +803,9 @@ header.scrolled .menu-icon {
         }
 
         .container-wrapper p {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22.4px;
             padding: 5%;
             margin: 0;
         }
@@ -861,6 +879,10 @@ header.scrolled .menu-icon {
         }
 
         .our-presence-heading {
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 28.8px;
+            letter-spacing: -0.02em;
             text-align: left;
             margin-bottom: 20px;
             color: #5107B8;
@@ -1008,11 +1030,13 @@ header.scrolled .menu-icon {
         /* Responsive styles */
         @media (max-width: 768px) {
             .certified-trusted {
-                flex-wrap: nowrap; /* Keep items in one row */
+                flex-wrap: nowrap;
+                /* Keep items in one row */
                 flex-direction: row;
                 justify-content: space-between;
                 gap: 10px;
-                overflow-x: auto; /* Prevent breaking layout */
+                overflow-x: auto;
+                /* Prevent breaking layout */
                 padding: 10px;
             }
 
@@ -1022,13 +1046,15 @@ header.scrolled .menu-icon {
                 padding-top: 10%;
                 align-items: center;
                 text-align: center;
-                min-width: 150px; /* Prevent squishing */
+                min-width: 150px;
+                /* Prevent squishing */
             }
 
             .trusted-images {
                 justify-content: center;
                 flex-wrap: nowrap;
-                overflow-x: auto; /* Allow scrolling if needed */
+                overflow-x: auto;
+                /* Allow scrolling if needed */
             }
         }
 
@@ -1075,45 +1101,49 @@ header.scrolled .menu-icon {
 
 
         .footer-bottom {
-    display: flex;
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 5%;
-    font-size: 14px;
-    color: #666;
-    background-color: #f8f8f8;
-}
+            display: flex;
+            flex-wrap: wrap;
+            /* Allows wrapping on smaller screens */
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+            font-size: 14px;
+            color: #666;
+            background-color: #f8f8f8;
+        }
 
-.footer-links-bottom {
-    display: flex;
-    flex-wrap: wrap; /* Allows links to wrap if needed */
-    gap: 10px;
-}
+        .footer-links-bottom {
+            display: flex;
+            flex-wrap: wrap;
+            /* Allows links to wrap if needed */
+            gap: 10px;
+        }
 
-.footer-links-bottom a {
-    text-decoration: none;
-    color: #666;
-    margin: 0 10px;
-    white-space: nowrap; /* Prevents links from breaking into two lines */
-}
+        .footer-links-bottom a {
+            text-decoration: none;
+            color: #666;
+            margin: 0 10px;
+            white-space: nowrap;
+            /* Prevents links from breaking into two lines */
+        }
 
-.footer-links-bottom a:hover {
-    color: #000;
-}
+        .footer-links-bottom a:hover {
+            color: #000;
+        }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .footer-bottom {
-        flex-direction: column; /* Stack items on smaller screens */
-        text-align: center;
-        gap: 10px;
-    }
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .footer-bottom {
+                flex-direction: column;
+                /* Stack items on smaller screens */
+                text-align: center;
+                gap: 10px;
+            }
 
-    .footer-links-bottom {
-        justify-content: center;
-    }
-}
+            .footer-links-bottom {
+                justify-content: center;
+            }
+        }
 
 
         @media (max-width: 768px) {
@@ -1166,7 +1196,8 @@ header.scrolled .menu-icon {
             <img src="contactbanner.png" alt="Hero Background">
         </div>
         <h1>Let’s Build a Smarter, More Innovative Future Together</h1>
-        <p style="line-height: 1.5rem;">Whether you need cutting-edge AI solutions, immersive XR experiences, or robust SaaS platforms, Gritbyte Labs
+        <p style="line-height: 1.5rem;">Whether you need cutting-edge AI solutions, immersive XR experiences, or robust
+            SaaS platforms, Gritbyte Labs
             is your global innovation partner. With a presence in UAE, USA, Canada, and South Korea, and offices in
             Bangalore and Mysore, we combine world-class expertise with localized support for businesses of all sizes
         </p>
@@ -1271,7 +1302,7 @@ header.scrolled .menu-icon {
     <section class="section45">
         <div class="container45">
             <div class="card45">
-                <h2 style="color: #5107B8;margin-bottom: 2rem;" class="highlight45">Why Gritbyte Labs?</h2>
+                <h2  class="highlight45">Why Gritbyte Labs?</h2>
                 <ol style="margin-bottom: 10px; padding-left: 1%;">
                     <li><span class="highlight45">Global Expertise: </span> Trusted by top-tier clients across 20+
                         countries, including Pfizer, Bosch Rexroth, and Hyundai.</li>
@@ -1289,7 +1320,8 @@ header.scrolled .menu-icon {
         <h1 class="container-heading">Client Success Stories</h1>
         <div class="container">
             <div class="card">
-                <p>Gritbyte Labs transformed our training process with XR solutions, improving efficiency by 35%.” <br><br>–
+                <p>Gritbyte Labs transformed our training process with XR solutions, improving efficiency by 35%.”
+                    <br><br>–
                     Global Retail Leader</p>
             </div>
 
@@ -1387,7 +1419,7 @@ header.scrolled .menu-icon {
                     <p>At Gritbyte Labs, we specialize in XR, AI, and scalable technology solutions that empower
                         businesses worldwide. With 260+ successful projects across 20+ countries, we’re your trusted
                         partner for innovation.</p>
-                        <a href="#" class="arrow">&#10145;</a>
+                    <a href="#" class="arrow">&#10145;</a>
                 </div>
                 <div class="certified-trusted">
                     <div class="certified">
@@ -1474,7 +1506,7 @@ header.scrolled .menu-icon {
             <a href="privacypolicy.html">Privacy Policy </a>
         </div>
     </div>
-    
+
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -1569,29 +1601,29 @@ header.scrolled .menu-icon {
 
         document.addEventListener("DOMContentLoaded", initPresenceMap);
     </script>
-   <script>
-    function toggleMenu() {
-        document.getElementById("nav-menu").classList.toggle("open");
-    }
-
-    const header = document.getElementById('header');
-    const logoImage = document.getElementById('logo');
-    const ctaButton = document.querySelector('.cta-button'); // Select the button
-    const originalLogoSrc = 'hel.png';
-    const scrolledLogoSrc = 'Gritbyte Logo 1 (1).png';
-
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            header.classList.add('scrolled');
-            logoImage.src = scrolledLogoSrc;
-            ctaButton.style.color = 'white'; // Keep text color white
-        } else {
-            header.classList.remove('scrolled');
-            logoImage.src = originalLogoSrc;
-            ctaButton.style.color = 'white'; // Ensure text remains white
+    <script>
+        function toggleMenu() {
+            document.getElementById("nav-menu").classList.toggle("open");
         }
-    });
-</script>
+
+        const header = document.getElementById('header');
+        const logoImage = document.getElementById('logo');
+        const ctaButton = document.querySelector('.cta-button'); // Select the button
+        const originalLogoSrc = 'hel.png';
+        const scrolledLogoSrc = 'Gritbyte Logo 1 (1).png';
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+                logoImage.src = scrolledLogoSrc;
+                ctaButton.style.color = 'white'; // Keep text color white
+            } else {
+                header.classList.remove('scrolled');
+                logoImage.src = originalLogoSrc;
+                ctaButton.style.color = 'white'; // Ensure text remains white
+            }
+        });
+    </script>
 
 </body>
 
