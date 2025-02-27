@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <title>Solutions</title>
@@ -17,9 +18,10 @@
         }
 
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Inter', sans-serif;
 
         }
+
         header {
             display: flex;
             justify-content: space-between;
@@ -44,16 +46,19 @@
         }
 
         .menu-icon {
-    display: none;
-    font-size: 30px;
-    cursor: pointer;
-    color: white; /* Default color before scrolling */
-    transition: color 0.3s ease; /* Smooth transition */
-}
+            display: none;
+            font-size: 30px;
+            cursor: pointer;
+            color: white;
+            /* Default color before scrolling */
+            transition: color 0.3s ease;
+            /* Smooth transition */
+        }
 
-header.scrolled .menu-icon {
-    color: black; /* Change to black when scrolled */
-}
+        header.scrolled .menu-icon {
+            color: black;
+            /* Change to black when scrolled */
+        }
 
 
 
@@ -82,17 +87,18 @@ header.scrolled .menu-icon {
         }
 
         nav a.cta-button {
-    background-color: #5107B8;
-    color: white !important;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: 600;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
+            background-color: #5107B8;
+            color: white !important;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
 
-.header.scrolled nav a.cta-button {
-    color: white !important; /* Ensures text stays white */
-}
+        .header.scrolled nav a.cta-button {
+            color: white !important;
+            /* Ensures text stays white */
+        }
 
         .hero-section {
             text-align: center;
@@ -106,7 +112,8 @@ header.scrolled .menu-icon {
         }
 
         .hero-section h1 {
-            text-shadow: 2px 2px 4px rgb(0, 0, 0); /* X-offset, Y-offset, blur-radius, color */
+            text-shadow: 2px 2px 4px rgb(0, 0, 0);
+            /* X-offset, Y-offset, blur-radius, color */
 
             text-align: left;
             color: white;
@@ -132,7 +139,7 @@ header.scrolled .menu-icon {
 
             .menu-icon {
                 display: block;
-                
+
             }
 
             #nav-menu {
@@ -213,7 +220,8 @@ header.scrolled .menu-icon {
         }
 
         .hero-section p {
-            text-shadow: 2px 2px 4px rgb(0, 0, 0); /* X-offset, Y-offset, blur-radius, color */
+            text-shadow: 2px 2px 4px rgb(0, 0, 0);
+            /* X-offset, Y-offset, blur-radius, color */
 
             padding-right: 50%;
             text-align: left;
@@ -250,6 +258,19 @@ header.scrolled .menu-icon {
             text-align: left;
         }
 
+        .container944 h1 {
+            letter-spacing: -0.02em;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 57.6px;
+        }
+
+        .container944 p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22.4px;
+        }
+
         .solutions944 {
             display: flex;
             gap: 20px;
@@ -261,10 +282,10 @@ header.scrolled .menu-icon {
         }
 
         .card944 {
-            position: relative;
             width: calc(25% - 15px);
-            /* 4 cards per row */
-            max-width: none;
+            /* Ensures 4 cards per row */
+            height: 455px;
+            position: relative;
             border-radius: 10px;
             overflow: hidden;
             cursor: pointer;
@@ -272,37 +293,68 @@ header.scrolled .menu-icon {
 
         .card944 img {
             width: 100%;
-            height: auto;
+            height: 100%;
             display: block;
             object-fit: cover;
         }
 
         .card-content944 {
-            text-shadow: 2px 2px 4px rgb(0, 0, 0); /* X-offset, Y-offset, blur-radius, color */
-
             position: absolute;
             bottom: 10%;
-            /* Better positioning */
             left: 10%;
             z-index: 1;
-            /* Ensures text appears above image */
             color: #fff;
-            /* Ensures text is visible */
-            font-size: 1.5rem;
-            font-weight: bold;
+            font-size: 22px;
+            font-weight: 700;
             display: flex;
             flex-direction: column;
-           
             gap: 5px;
-            /* Better spacing */
+            text-shadow: 2px 2px 4px rgb(0, 0, 0);
+            width: 80%;
+            /* Prevents text from overflowing */
+            word-wrap: break-word;
+            /* Ensures long words break properly */
         }
 
+        /* Gradient Overlay */
+        .card944::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 40%;
+            /* Adjust gradient height */
+            background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+            pointer-events: none;
+        }
+
+        /* Text should be on top of gradient */
+        .card-content944 {
+            position: absolute;
+            bottom: 10%;
+            left: 10%;
+            z-index: 2;
+            /* Ensures text is above gradient */
+            color: #fff;
+            font-size: 22px;
+            font-weight: 700;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            text-shadow: 2px 2px 4px rgb(0, 0, 0);
+            width: 80%;
+            word-wrap: break-word;
+        }
+
+        /* Arrow effect */
         .arrow944 {
             display: inline-block;
             margin-top: 5px;
-            font-size: 2.5rem;
+            font-size: 2rem;
             transition: transform 0.3s ease;
         }
+
 
         .card944:hover .arrow944 {
             transform: translateX(8px);
@@ -327,7 +379,6 @@ header.scrolled .menu-icon {
                 max-width: 400px;
             }
         }
-
 
 
 
@@ -366,11 +417,12 @@ header.scrolled .menu-icon {
         }
 
         .right47 h2 {
-            /* font-family: "Bower", Georgia, "Times New Roman", serif; */
-            font-size: 2rem;
-            font-weight: bold;
+
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 38.4px;
             margin-bottom: 10px;
-            line-height: 1.2;
+
         }
 
         .arrow47 {
@@ -476,42 +528,54 @@ header.scrolled .menu-icon {
         }
 
         .future-proof-section .headline60 {
-            font-size: 2vw;
+
+            font-weight: 900;
+            line-height: 38.4px;
+            font-size: 32px;
             /* Responsive font size */
-            font-weight: bold;
+       
             color: #000000;
         }
 
         .future-proof-section .subtext60 {
-            font-weight: bold;
-            font-size: 2vw;
+            font-weight: 900;
+            line-height: 38.4px;
+            font-size: 32px;
             color: #000000;
             margin-top: 10px;
         }
 
         .future-proof-section .button60 {
-            display: inline-block;
-            background-color: #5107B8;
-            color: white;
-            padding: 12px 28px;
-            font-size: 1.5vw;
-            font-weight: 600;
-            text-transform: uppercase;
-            border-radius: 5px;
-            margin-top: 15px;
-            text-decoration: none;
-            cursor: pointer;
-            transition: background-color 0.3s, transform 0.2s;
-        }
+    display: inline-flex; /* Allows better control of spacing */
+    align-items: center; /* Vertically aligns text and arrow */
+    justify-content: center;
+    background-color: #5107B8;
+    color: white;
+    width: 432px; /* Fixed width */
+    height: 72px; /* Fixed height */
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+    border-radius: 4px;
+    margin-top: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    gap: 10px; /* Space between text and arrow */
+}
 
-        .future-proof-section .button60:hover {
-            background-color: #3a006e;
-        }
+.future-proof-section .button60:hover {
+    background-color: #3a006e;
+}
 
-        .future-proof-section .button60:hover .arrow {
-            transform: translateX(5px);
-            transition: transform 0.3s ease-in-out;
-        }
+.future-proof-section .button60 .arrow {
+    transition: transform 0.3s ease-in-out;
+}
+
+.future-proof-section .button60:hover .arrow {
+    transform: translateX(5px);
+}
+
 
         /* Responsive adjustments */
         @media (max-width: 768px) {
@@ -567,8 +631,11 @@ header.scrolled .menu-icon {
         .container87 h2 {
             /* font-family: "Bower", Georgia, "Times New Roman", serif; */
             text-align: center;
-            font-size: 2.5rem;
-            font-weight: 500;
+            font-size: 48px;
+            line-height: 57.6px;
+            letter-spacing: -0.02em;
+            /* Reduces letter spacing by 2% */
+            font-weight: 700;
             margin-bottom: 100px;
         }
 
@@ -598,16 +665,21 @@ header.scrolled .menu-icon {
 
         .grid-item87 h3 {
             /* font-family: "Bower", Georgia, "Times New Roman", serif; */
-            font-size: 1.5rem;
-            font-weight: 500;
+            font-size: 24px;
+            line-height: 28.8px;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            /* Reduces letter spacing by 2% */
             margin-bottom: 20px;
             margin-top: 10px;
         }
 
         .grid-item87 p {
             /* font-family: "McKinsey Sans", "Helvetica Neue", Calibri, Corbel, Helvetica, Roboto, Droid, sans-serif; */
-            font-size: 1.25rem;
-            color: #333333;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22.4px;
+            color: #757575;
         }
 
         .grid87.bottom87 {
@@ -683,10 +755,13 @@ header.scrolled .menu-icon {
         }
 
         .container61 h1 {
+            letter-spacing: -0.02em;
+            /* Approx. -2% letter spacing */
             text-align: left;
+            line-height: 57.6px;
             /* font-family: "McKinsey Sans", "Helvetica Neue", Calibri, Corbel, Helvetica, Roboto, Droid, sans-serif; */
-            font-size: 2.5rem;
-            font-weight: 500;
+            font-size: 48px;
+            font-weight: 700;
         }
 
         .cards60 {
@@ -730,17 +805,22 @@ header.scrolled .menu-icon {
         }
 
         .card-content60 h2 {
-            text-shadow: 2px 2px 4px rgb(0, 0, 0); /* X-offset, Y-offset, blur-radius, color */
-
+            text-shadow: 2px 2px 4px rgb(0, 0, 0);
+            letter-spacing: -0.03em;
+            /* Reduces letter spacing by 3% */
+            /* X-offset, Y-offset, blur-radius, color */
+            line-height: 86.4px;
             text-align: left;
-            font-size: 50px;
-            font-weight: 500;
+            font-size: 74px;
+            font-weight: 700;
             margin: 0;
         }
 
         .card-content60 p {
-            text-shadow: 2px 2px 4px rgb(0, 0, 0); /* X-offset, Y-offset, blur-radius, color */
-
+            text-shadow: 2px 2px 4px rgb(0, 0, 0);
+            line-height: 22.4px;
+            /* X-offset, Y-offset, blur-radius, color */
+            font-weight: 900;
             text-align: left;
             margin: 5px 0 0;
             font-size: 16px;
@@ -891,11 +971,13 @@ header.scrolled .menu-icon {
         /* Responsive styles */
         @media (max-width: 768px) {
             .certified-trusted {
-                flex-wrap: nowrap; /* Keep items in one row */
+                flex-wrap: nowrap;
+                /* Keep items in one row */
                 flex-direction: row;
                 justify-content: space-between;
                 gap: 10px;
-                overflow-x: auto; /* Prevent breaking layout */
+                overflow-x: auto;
+                /* Prevent breaking layout */
                 padding: 10px;
             }
 
@@ -905,13 +987,15 @@ header.scrolled .menu-icon {
                 padding-top: 10%;
                 align-items: center;
                 text-align: center;
-                min-width: 150px; /* Prevent squishing */
+                min-width: 150px;
+                /* Prevent squishing */
             }
 
             .trusted-images {
                 justify-content: center;
                 flex-wrap: nowrap;
-                overflow-x: auto; /* Allow scrolling if needed */
+                overflow-x: auto;
+                /* Allow scrolling if needed */
             }
         }
 
@@ -958,45 +1042,49 @@ header.scrolled .menu-icon {
 
 
         .footer-bottom {
-    display: flex;
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 5%;
-    font-size: 14px;
-    color: #666;
- 
-}
+            display: flex;
+            flex-wrap: wrap;
+            /* Allows wrapping on smaller screens */
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+            font-size: 14px;
+            color: #666;
 
-.footer-links-bottom {
-    display: flex;
-    flex-wrap: wrap; /* Allows links to wrap if needed */
-    gap: 10px;
-}
+        }
 
-.footer-links-bottom a {
-    text-decoration: none;
-    color: #666;
-    margin: 0 10px;
-    white-space: nowrap; /* Prevents links from breaking into two lines */
-}
+        .footer-links-bottom {
+            display: flex;
+            flex-wrap: wrap;
+            /* Allows links to wrap if needed */
+            gap: 10px;
+        }
 
-.footer-links-bottom a:hover {
-    color: #000;
-}
+        .footer-links-bottom a {
+            text-decoration: none;
+            color: #666;
+            margin: 0 10px;
+            white-space: nowrap;
+            /* Prevents links from breaking into two lines */
+        }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .footer-bottom {
-        flex-direction: column; /* Stack items on smaller screens */
-        text-align: center;
-        gap: 10px;
-    }
+        .footer-links-bottom a:hover {
+            color: #000;
+        }
 
-    .footer-links-bottom {
-        justify-content: center;
-    }
-}
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .footer-bottom {
+                flex-direction: column;
+                /* Stack items on smaller screens */
+                text-align: center;
+                gap: 10px;
+            }
+
+            .footer-links-bottom {
+                justify-content: center;
+            }
+        }
 
 
         @media (max-width: 768px) {
@@ -1084,7 +1172,7 @@ header.scrolled .menu-icon {
             </a>
         </div>
     </div>
-    
+
 
     <div class="section47">
         <div class="left47">
@@ -1185,7 +1273,7 @@ header.scrolled .menu-icon {
                     <p>At Gritbyte Labs, we specialize in XR, AI, and scalable technology solutions that empower
                         businesses worldwide. With 260+ successful projects across 20+ countries, we’re your trusted
                         partner for innovation.</p>
-                        <a href="#" class="arrow">&#10145;</a>
+                    <a href="#" class="arrow">&#10145;</a>
                 </div>
                 <div class="certified-trusted">
                     <div class="certified">
@@ -1284,13 +1372,13 @@ header.scrolled .menu-icon {
         function toggleMenu() {
             document.getElementById("nav-menu").classList.toggle("open");
         }
-    
+
         const header = document.getElementById('header');
         const logoImage = document.getElementById('logo');
         const ctaButton = document.querySelector('.cta-button'); // Select the button
         const originalLogoSrc = 'hel.png';
         const scrolledLogoSrc = 'Gritbyte Logo 1 (1).png';
-    
+
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) {
                 header.classList.add('scrolled');
