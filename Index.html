@@ -7,6 +7,7 @@
     <title>Index</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
@@ -14,7 +15,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: Arial, sans-serif;
+            font-family: 'Inter', sans-serif;
         }
 
         html,
@@ -51,17 +52,21 @@
         header.scrolled nav a {
             color: black;
         }
-        .menu-icon {
-    display: none;
-    font-size: 30px;
-    cursor: pointer;
-    color: white; /* Default color before scrolling */
-    transition: color 0.3s ease; /* Smooth transition */
-}
 
-header.scrolled .menu-icon {
-    color: black; /* Change to black when scrolled */
-}
+        .menu-icon {
+            display: none;
+            font-size: 30px;
+            cursor: pointer;
+            color: white;
+            /* Default color before scrolling */
+            transition: color 0.3s ease;
+            /* Smooth transition */
+        }
+
+        header.scrolled .menu-icon {
+            color: black;
+            /* Change to black when scrolled */
+        }
 
 
 
@@ -71,11 +76,12 @@ header.scrolled .menu-icon {
         }
 
         nav a {
-            font-weight: bold;
+            font-weight: 400;
             margin: 0 15px;
             color: white;
             text-decoration: none;
-            font-size: 14px;
+            font-size: 15px;
+            line-height: 24px;
             position: relative;
         }
 
@@ -115,7 +121,8 @@ header.scrolled .menu-icon {
         }
 
         .hero-section h1 {
-            text-shadow: 2px 2px 4px rgb(0, 0, 0); /* X-offset, Y-offset, blur-radius, color */
+            text-shadow: 2px 2px 4px rgb(0, 0, 0);
+            /* X-offset, Y-offset, blur-radius, color */
 
             text-align: left;
             color: white;
@@ -141,7 +148,7 @@ header.scrolled .menu-icon {
 
             .menu-icon {
                 display: block;
-                
+
             }
 
             #nav-menu {
@@ -216,39 +223,106 @@ header.scrolled .menu-icon {
         .hero-section h1 {
             text-align: center;
             color: white;
-            font-size: 36px;
-            font-weight: 600;
+            font-size: 48px;
+            font-weight: 700;
             margin-bottom: 20px;
+            line-height: 57.6px;
+
         }
 
         .hero-section p {
-            text-shadow: 2px 2px 4px rgb(0, 0, 0); /* X-offset, Y-offset, blur-radius, color */
-
-           
+            text-shadow: 2px 2px 4px rgb(0, 0, 0);
+            /* X-offset, Y-offset, blur-radius, color */
+            line-height: 24px;
+            padding: 0 15%;
+            font-weight: 400;
             text-align: center;
             color: white;
             margin-top: 10px;
-            font-size: 14px;
+            font-size: 20px;
             opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 32px;
+                line-height: 40px;
+            }
+
+            .hero-section p {
+                font-size: 16px;
+                line-height: 22px;
+                padding: 0 10%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-section h1 {
+                font-size: 28px;
+                line-height: 36px;
+            }
+
+            .hero-section p {
+                font-size: 14px;
+                line-height: 20px;
+                padding: 0 8%;
+            }
         }
 
         .demo-button {
     background-color: #7e00ff;
+    letter-spacing: 0.1em; /* Adjusted for better spacing */
     color: white;
-    padding: 15px 40px;
+    padding: 24px 36px;
     margin: 10px auto;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 16px;
     display: block;
-    width: fit-content;
+    width: 100%; /* Full width within container */
+    max-width: 436px; /* Restricts max width */
+    height: auto; /* Allows flexibility */
+    min-height: 60px; /* Ensures proper button height */
+    text-align: center;
+    line-height: 1.5;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.demo-button span {
+    margin-left: 8px;
+    display: inline-block;
+}
+
+/* Hover Effect */
 .demo-button:hover {
-    transform: scale(1.1); /* Slightly enlarges the button */
-    box-shadow: 0px 5px 15px rgba(126, 0, 255, 0.4); /* Adds a glow effect */
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(126, 0, 255, 0.4);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .demo-button {
+        max-width: 90%;
+        min-height: 55px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .demo-button {
+        max-width: 80%;
+        min-height: 50px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .demo-button {
+        max-width: 90%;
+        padding: 16px 24px;
+        font-size: 14px;
+    }
 }
 
 
@@ -304,20 +378,23 @@ header.scrolled .menu-icon {
         }
 
         .text-box h2 {
-           
-            font-weight: 500;
+
+            font-weight: 900;
             /* font-family: "Bower", Georgia, "Times New Roman", serif; */
-            font-size: 3.25rem;
+            font-size: 1.25rem;
             margin-bottom: 10px;
-            line-height: 4rem;
+
         }
 
         .text-box h3 {
             text-align: justify;
             /* font-family: "McKinsey Sans", "Helvetica Neue", Calibri, Corbel, Helvetica, Roboto, Droid, sans-serif; */
-            font-weight: 520;
-            font-size: 1.75rem;
-            color: #555;
+            font-weight: 600;
+            font-size: 20px;
+            color: #757575;
+            line-height: 24px;
+            letter-spacing: -0.02em;
+            /* -2% in CSS */
             margin-bottom: 15px;
         }
 
@@ -329,23 +406,26 @@ header.scrolled .menu-icon {
         .text-box ul li {
             font-size: 1.2rem;
             line-height: 1.8rem;
-            color: #555;
+            color: #000000;
         }
 
         .text-box p {
             text-align: justify;
-            /* font-family: "McKinsey Sans", "Helvetica Neue", Calibri, Corbel, Helvetica, Roboto, Droid, sans-serif; */
             font-size: 1.25rem;
-            line-height: 2rem;
-            color: #555;
+            line-height: 19.6px;
+            color: #1E1E1E;
+            font-weight: 400;
         }
 
         .text-box a {
-            color: #5107B8;
+            color: #000000;
+            font-size: 14px;
             text-decoration: none;
-            font-weight: 500;
+            font-weight: 900;
             display: inline-flex;
             align-items: center;
+            line-height: 16.8px;
+            letter-spacing: 20%;
             transition: color 0.3s ease-in-out;
         }
 
@@ -503,83 +583,122 @@ header.scrolled .menu-icon {
         .container94 {
             width: 90%;
             margin: 50px auto;
+          
 
         }
 
         .container94 h2 {
-            font-size: 32px;
-            font-weight: bold;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 57.6px;
+            letter-spacing: -0.02em; /* Approx. -2% letter spacing */
             text-align: left;
             margin-bottom: 3%;
         }
 
         .testimonials {
-            display: flex;
-            justify-content: center;
-            gap: 100px;
-            flex-wrap: nowrap;
-        }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center cards */
+    gap: 20px; /* Space between cards */
+    width: 100%;
+    padding: 0;
+}
 
-        .testimonial-card {
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            width: 20%;
-            min-height: 300px;
-            text-align: left;
-        }
+.testimonial-card {
+    background: white;
+    padding: 30px;
+    border-radius: 24px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px; /* Fixed width */
+    height: 512px; /* Fixed height */
+    text-align: left;
+    flex-shrink: 0; /* Prevents shrinking */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Evenly distribute content */
+}
 
-        .testimonial-text {
-            margin-top: 90px;
-            text-align: justify;
-            font-size: 14px;
-            color: #333;
-            margin-bottom: 90px;
-        }
+.testimonial-text {
+    text-align: center; /* Centers text horizontally */
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    color: #333;
+    flex-grow: 1; /* Makes text take up available space */
+    display: flex;
+    align-items: center; /* Centers text vertically */
+    justify-content: center; /* Centers text horizontally */
+    padding: 0 20px; /* Adds side padding for better readability */
+}
 
-        .divider {
-            border-top: 1px dashed #ccc;
-            margin-bottom: 20px;
-        }
+/* Align all dividers in the same row */
+.divider {
+    border-top: 1px dashed #ccc;
+    margin: 0 auto; /* Center the divider */
+    width: 80%; /* Uniform width */
+}
 
-        .testimonial-name {
-            text-align: center;
-            font-weight: bold;
-            font-size: 16px;
-            margin-top: 20px;
-        }
+.testimonial-name {
+    letter-spacing: -0.02em;
+    color: #757575;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 20px;
+}
 
-        .testimonial-role {
-            text-align: center;
-            font-size: 14px;
-            color: gray;
-            margin-top: 10px;
-        }
+.testimonial-role {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: #1E1E1E;
+    line-height: 16.8px;
+    letter-spacing: -0.02em;
+    margin-top: 10px;
+}
 
-        @media (max-width: 1024px) {
-            .testimonials {
-                flex-wrap: wrap;
-            }
+/* Ensure exactly 4 cards per row */
+@media (min-width: 1800px) {
+    .testimonials {
+        justify-content: space-evenly;
+    }
+}
 
-            .testimonial-card {
-                width: 45%;
-            }
-        }
+@media (max-width: 1799px) {
+    .testimonials {
+        justify-content: center;
+    }
+}
 
-        @media (max-width: 768px) {
-            .testimonials {
-                flex-direction: column;
-                align-items: center;
-            }
+/* 2 cards per row on tablets */
+@media (max-width: 1024px) {
+    .testimonials {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
 
-            .testimonial-card {
-                width: 90%;
-                max-width: 600px;
-                margin: 10px auto;
-                padding: 20px;
-            }
-        }
+    .testimonial-card {
+        width: calc(50% - 20px); /* 2 cards per row */
+    }
+}
+
+/* 1 card per row on mobile */
+@media (max-width: 768px) {
+    .testimonials {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial-card {
+        width: 100%;
+        max-width: 450px;
+    }
+}
+
+
+
 
         .containervideo {
             display: flex;
@@ -587,8 +706,8 @@ header.scrolled .menu-icon {
             justify-content: space-between;
             width: 90%;
             margin: 50px auto;
-            padding: 5%;
-            background: white;
+            /* padding: 5%; */
+
             border-radius: 10px;
         }
 
@@ -633,17 +752,19 @@ header.scrolled .menu-icon {
         }
 
         .text-container h2 {
-            text-align: justify;
-            font-size: 24px;
-            font-weight: 500;
+            color: #303030;
+            text-align: left;
+            font-size: 32px;
+            font-weight: 900;
+            line-height: 38.4px;
             margin-bottom: 2%;
         }
 
         .text-container p {
-            line-height: 1.5rem;
+            line-height: 22.4px;
             text-align: justify;
             font-size: 16px;
-            color: #555;
+            color: #757575;
         }
 
         @media (max-width: 768px) {
@@ -666,64 +787,84 @@ header.scrolled .menu-icon {
         .container {
             width: 100%;
             margin: auto;
-
-
         }
 
-        h2 {
-
-            font-size: 28px;
-            font-weight: bold;
+        /* Heading Styling */
+        .container  h2 {
+            font-size: 38.4px;
+            font-weight: 900;
             margin-bottom: 40px;
+            text-align: left;
+            padding-left: 5%;
+            line-height: 1.2;
         }
 
+        /* Offerings Section */
         .offerings {
-
             display: flex;
             justify-content: space-between;
         }
 
+        /* Offer Card */
         .offer-card {
             position: relative;
             width: 25%;
-
-
             overflow: hidden;
-
         }
 
+        /* Card Image */
         .offer-card img {
             width: 100%;
             display: block;
         }
 
+        /* Gradient Overlay */
+        .offer-card::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            /* Adjust gradient height */
+            background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+            z-index: 1;
+        }
+
+        /* Offer Text */
         .offer-text {
-            text-shadow: 2px 2px 4px rgb(0, 0, 0); /* X-offset, Y-offset, blur-radius, color */
-            position: absolute;
-            bottom: 60px;
-            left: 20px;
-            color: white;
-            font-size: 16px;
-            font-weight: bold;
-            max-width: 80%;
+            text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    position: absolute;
+    bottom: 80px; /* Increased from 60px */
+    left: 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    max-width: 80%;
+    line-height: 28.8px;
+    letter-spacing: -0.02em;
+    z-index: 2; /* Ensures text is above the gradient */
         }
 
-        .arrow {
-            text-shadow: 2px 2px 4px rgb(0, 0, 0); /* X-offset, Y-offset, blur-radius, color */
-
-            position: absolute;
-            bottom: 20px;
-            left: 20px;
-            color: white;
-            font-size: 40px;
-            padding: 5px 10px;
-            transition: transform 0.3s ease-in-out;
+        /* Arrow */
+        .arrow11 {
+            text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 50px; /* Increased arrow size */
+    padding: 5px 10px;
+    transition: transform 0.3s ease-in-out;
+    z-index: 2; /* Ensures arrow is above the gradient */
         }
 
-        .offer-card:hover .arrow {
+        /* Hover Effect */
+        .offer-card:hover .arrow11 {
             transform: translateX(5px);
         }
 
+        /* Responsive Styling */
         @media (max-width: 1024px) {
             .offerings {
                 flex-wrap: wrap;
@@ -732,6 +873,11 @@ header.scrolled .menu-icon {
 
             .offer-card {
                 width: 48%;
+            }
+
+            .container   h2 {
+               
+                font-size: 32px;
             }
         }
 
@@ -744,7 +890,14 @@ header.scrolled .menu-icon {
             .offer-card {
                 width: 100%;
             }
+
+            h2 {
+                font-size: 28px;
+                text-align: center;
+                padding-left: 0;
+            }
         }
+
 
         .footer {
             padding: 0 5%;
@@ -882,11 +1035,13 @@ header.scrolled .menu-icon {
         /* Responsive styles */
         @media (max-width: 768px) {
             .certified-trusted {
-                flex-wrap: nowrap; /* Keep items in one row */
+                flex-wrap: nowrap;
+                /* Keep items in one row */
                 flex-direction: row;
                 justify-content: space-between;
                 gap: 10px;
-                overflow-x: auto; /* Prevent breaking layout */
+                overflow-x: auto;
+                /* Prevent breaking layout */
                 padding: 10px;
             }
 
@@ -896,13 +1051,15 @@ header.scrolled .menu-icon {
                 padding-top: 10%;
                 align-items: center;
                 text-align: center;
-                min-width: 150px; /* Prevent squishing */
+                min-width: 150px;
+                /* Prevent squishing */
             }
 
             .trusted-images {
                 justify-content: center;
                 flex-wrap: nowrap;
-                overflow-x: auto; /* Allow scrolling if needed */
+                overflow-x: auto;
+                /* Allow scrolling if needed */
             }
         }
 
@@ -949,45 +1106,49 @@ header.scrolled .menu-icon {
 
 
         .footer-bottom {
-    display: flex;
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 5%;
-    font-size: 14px;
-    color: #666;
-    background-color: #f8f8f8;
-}
+            display: flex;
+            flex-wrap: wrap;
+            /* Allows wrapping on smaller screens */
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+            font-size: 14px;
+            color: #666;
+            background-color: #f8f8f8;
+        }
 
-.footer-links-bottom {
-    display: flex;
-    flex-wrap: wrap; /* Allows links to wrap if needed */
-    gap: 10px;
-}
+        .footer-links-bottom {
+            display: flex;
+            flex-wrap: wrap;
+            /* Allows links to wrap if needed */
+            gap: 10px;
+        }
 
-.footer-links-bottom a {
-    text-decoration: none;
-    color: #666;
-    margin: 0 10px;
-    white-space: nowrap; /* Prevents links from breaking into two lines */
-}
+        .footer-links-bottom a {
+            text-decoration: none;
+            color: #666;
+            margin: 0 10px;
+            white-space: nowrap;
+            /* Prevents links from breaking into two lines */
+        }
 
-.footer-links-bottom a:hover {
-    color: #000;
-}
+        .footer-links-bottom a:hover {
+            color: #000;
+        }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .footer-bottom {
-        flex-direction: column; /* Stack items on smaller screens */
-        text-align: center;
-        gap: 10px;
-    }
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .footer-bottom {
+                flex-direction: column;
+                /* Stack items on smaller screens */
+                text-align: center;
+                gap: 10px;
+            }
 
-    .footer-links-bottom {
-        justify-content: center;
-    }
-}
+            .footer-links-bottom {
+                justify-content: center;
+            }
+        }
 
 
         @media (max-width: 768px) {
@@ -1008,7 +1169,7 @@ header.scrolled .menu-icon {
 
             .trusted {
                 align-items: flex-start;
-           
+
             }
         }
     </style>
@@ -1017,7 +1178,7 @@ header.scrolled .menu-icon {
 <body>
     <header id="header">
         <div class="logo">
-            <a href="#"><img id="logo" src="hel.png" alt="Gritbyte Labs Logo" height="40"></a>
+            <a href="Index.html"><img id="logo" src="hel.png" alt="Gritbyte Labs Logo" height="40"></a>
         </div>
         <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
         <nav id="nav-menu">
@@ -1025,7 +1186,7 @@ header.scrolled .menu-icon {
             <a href="index.html" class="desktop-home"><i class="fas fa-home"></i></a>
             <a href="index.html" class="mobile-home">Home</a>
 
-           
+
             <a href="Product.html">Products</a>
             <a href="Solutions.html">Solutions</a>
             <a href="#">Case Studies</a>
@@ -1041,12 +1202,12 @@ header.scrolled .menu-icon {
         <div class="hero-background">
             <img src="hero.png" alt="Hero Background">
         </div>
-        <h1>Empowering Businesses with Cutting-Edge AI, XR, and Digital Transformation</h1>
+        <h1>Empowering Businesses with Cutting-<br>Edge AI, XR, and Digital Transformation</h1>
         <p>260+ successful projects. 20+ countries. Trusted by global innovators. Unlock the future with AI-driven,
             XR-powered, and scalable tech solutions.</p>
-            <button class="demo-button" onclick="window.location.href='contact3.html'">
-                GET A DEMO <span>&rarr;</span>
-            </button>
+        <button class="demo-button" onclick="window.location.href='contact3.html'">
+            GET A DEMO <span>&rarr;</span>
+        </button>
     </section>
 
 
@@ -1329,23 +1490,23 @@ header.scrolled .menu-icon {
         <div class="offerings">
             <div class="offer-card">
                 <img src="offer1.png" alt="XR Solutions">
-                <div class="offer-text">Custom XR Solutions: <br>Immersive & Interactive</div>
-                <div class="arrow">&rarr;</div>
+                <div class="offer-text">Custom XR Solutions: Immersive & Interactive</div>
+                <div class="arrow11">&rarr;</div>
             </div>
             <div class="offer-card">
                 <img src="offer2.png" alt="AI Tools">
-                <div class="offer-text">AI-Powered Tools: Intelligent, <br>Scalable, Game-Changing</div>
-                <div class="arrow">&rarr;</div>
+                <div class="offer-text">AI-Powered Tools: Intelligent, Scalable, Game-Changing</div>
+                <div class="arrow11">&rarr;</div>
             </div>
             <div class="offer-card">
                 <img src="offer3.png" alt="Team Management">
-                <div class="offer-text">Offshore Team Management: <br>Scalable & Cost-Efficient</div>
-                <div class="arrow">&rarr;</div>
+                <div class="offer-text">Offshore Team Management: Scalable & Cost-Efficient</div>
+                <div class="arrow11">&rarr;</div>
             </div>
             <div class="offer-card">
                 <img src="offer4.png" alt="3D Design">
-                <div class="offer-text">3D Design & Visualization: <br>Stunning, High-Fidelity Content</div>
-                <div class="arrow">&rarr;</div>
+                <div class="offer-text">3D Design & Visualization: Stunning, High-Fidelity Content</div>
+                <div class="arrow11">&rarr;</div>
             </div>
         </div>
     </div>
