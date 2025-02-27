@@ -441,7 +441,6 @@
             font-weight: 400;
             line-height: 22.4px;
         }
-
         .future-proof-section {
             font-family: Arial, sans-serif;
             background-color: #f5f5f5;
@@ -460,42 +459,54 @@
         }
 
         .future-proof-section .headline60 {
-            font-size: 2vw;
+
+            font-weight: 900;
+            line-height: 38.4px;
+            font-size: 32px;
             /* Responsive font size */
-            font-weight: bold;
+       
             color: #000000;
         }
 
         .future-proof-section .subtext60 {
-            font-weight: bold;
-            font-size: 2vw;
+            font-weight: 900;
+            line-height: 38.4px;
+            font-size: 32px;
             color: #000000;
             margin-top: 10px;
         }
 
         .future-proof-section .button60 {
-            display: inline-block;
-            background-color: #5107B8;
-            color: white;
-            padding: 12px 28px;
-            font-size: 1.5vw;
-            font-weight: 600;
-            text-transform: uppercase;
-            border-radius: 5px;
-            margin-top: 15px;
-            text-decoration: none;
-            cursor: pointer;
-            transition: background-color 0.3s, transform 0.2s;
-        }
+    display: inline-flex; /* Allows better control of spacing */
+    align-items: center; /* Vertically aligns text and arrow */
+    justify-content: center;
+    background-color: #5107B8;
+    color: white;
+    width: 432px; /* Fixed width */
+    height: 72px; /* Fixed height */
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+    border-radius: 4px;
+    margin-top: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    gap: 10px; /* Space between text and arrow */
+}
 
-        .future-proof-section .button60:hover {
-            background-color: #3a006e;
-        }
+.future-proof-section .button60:hover {
+    background-color: #3a006e;
+}
 
-        .future-proof-section .button60:hover .arrow {
-            transform: translateX(5px);
-            transition: transform 0.3s ease-in-out;
-        }
+.future-proof-section .button60 .arrow {
+    transition: transform 0.3s ease-in-out;
+}
+
+.future-proof-section .button60:hover .arrow {
+    transform: translateX(5px);
+}
+
 
         /* Responsive adjustments */
         @media (max-width: 768px) {
