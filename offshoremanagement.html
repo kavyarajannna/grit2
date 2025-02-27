@@ -14,7 +14,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: Arial, sans-serif;
+            font-family: 'Inter', sans-serif;
         }
 
         body {
@@ -45,16 +45,19 @@
         }
 
         .menu-icon {
-    display: none;
-    font-size: 30px;
-    cursor: pointer;
-    color: white; /* Default color before scrolling */
-    transition: color 0.3s ease; /* Smooth transition */
-}
+            display: none;
+            font-size: 30px;
+            cursor: pointer;
+            color: white;
+            /* Default color before scrolling */
+            transition: color 0.3s ease;
+            /* Smooth transition */
+        }
 
-header.scrolled .menu-icon {
-    color: black; /* Change to black when scrolled */
-}
+        header.scrolled .menu-icon {
+            color: black;
+            /* Change to black when scrolled */
+        }
 
 
 
@@ -83,48 +86,20 @@ header.scrolled .menu-icon {
         }
 
         nav a.cta-button {
-    background-color: #5107B8;
-    color: white !important;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: 600;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.header.scrolled nav a.cta-button {
-    color: white !important; /* Ensures text stays white */
-}
-
-        .hero-section {
-            text-align: center;
-            position: relative;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            padding: 20px;
-            padding-bottom: 60px;
-        }
-
-        .hero-section h1 {
-            text-shadow: 2px 2px 4px rgb(0, 0, 0); /* X-offset, Y-offset, blur-radius, color */
-
-            text-align: left;
-            color: white;
-            font-size: 36px;
+            background-color: #5107B8;
+            color: white !important;
+            padding: 10px 20px;
+            border-radius: 5px;
             font-weight: 600;
-            margin-bottom: 20px;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
 
-        .hero-background img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: -1;
+        .header.scrolled nav a.cta-button {
+            color: white !important;
+            /* Ensures text stays white */
         }
+
+    
 
         @media (max-width: 768px) {
             header {
@@ -133,7 +108,7 @@ header.scrolled .menu-icon {
 
             .menu-icon {
                 display: block;
-                
+
             }
 
             #nav-menu {
@@ -206,22 +181,30 @@ header.scrolled .menu-icon {
         }
 
         .hero-section h1 {
+            text-shadow: 2px 2px 4px rgb(0, 0, 0);
+            /* X-offset, Y-offset, blur-radius, color */
+
             text-align: left;
+            line-height: 57.6px;
             color: white;
-            font-size: 36px;
-            font-weight: 600;
+            font-size: 48px;
+            letter-spacing: -0.02em;
+            font-weight: 700;
             margin-bottom: 20px;
         }
 
         .hero-section p {
-            text-shadow: 2px 2px 4px rgb(0, 0, 0); /* X-offset, Y-offset, blur-radius, color */
+            text-shadow: 2px 2px 4px rgb(0, 0, 0);
+            /* X-offset, Y-offset, blur-radius, color */
 
+            font-weight: 600;
+            line-height: 22.4px;
             padding-right: 50%;
             text-align: left;
             color: white;
             margin-top: 10px;
-            font-size: 14px;
-            opacity: 0.8;
+            font-size: 16px;
+    
         }
 
         .demo-button {
@@ -255,14 +238,14 @@ header.scrolled .menu-icon {
         }
 
         .container-heading {
+            line-height: 28.8px;
             margin-top: 20px;
             text-align: left;
-            font-size: 1.5rem;
-            font-weight: 500;
+            font-size: 24px;
+            font-weight: 800;
             margin-bottom: 20px;
-            color: #4A00E0;
-            /* font-family: "McKinsey Sans", "Helvetica Neue", Calibri, Corbel, Helvetica, Roboto, Droid, sans-serif; */
-
+            color: #5107B8;
+            letter-spacing: -0.02em;
             padding-left: 5%;
         }
 
@@ -380,16 +363,20 @@ header.scrolled .menu-icon {
         }
 
         .italic-text {
-           
+
             color: #666;
             font-size: clamp(1rem, 1.5vw, 1.25rem);
         }
 
         .header-section23 p {
-            color: #333;
-            line-height: 1.6;
+            
+            color: #000000;
+            font-size: 16px;
+            /* font-family: "Bower", Georgia, "Times New Roman", serif; */
+            font-weight: 400;
+            line-height: 22.4px;
         }
-
+       
         .future-proof-section {
             font-family: Arial, sans-serif;
             background-color: #f5f5f5;
@@ -408,42 +395,54 @@ header.scrolled .menu-icon {
         }
 
         .future-proof-section .headline60 {
-            font-size: 2vw;
+
+            font-weight: 900;
+            line-height: 38.4px;
+            font-size: 32px;
             /* Responsive font size */
-            font-weight: bold;
+       
             color: #000000;
         }
 
         .future-proof-section .subtext60 {
-            font-weight: bold;
-            font-size: 2vw;
+            font-weight: 900;
+            line-height: 38.4px;
+            font-size: 32px;
             color: #000000;
             margin-top: 10px;
         }
 
         .future-proof-section .button60 {
-            display: inline-block;
-            background-color: #5107B8;
-            color: white;
-            padding: 12px 28px;
-            font-size: 1.5vw;
-            font-weight: 600;
-            text-transform: uppercase;
-            border-radius: 5px;
-            margin-top: 15px;
-            text-decoration: none;
-            cursor: pointer;
-            transition: background-color 0.3s, transform 0.2s;
-        }
+    display: inline-flex; /* Allows better control of spacing */
+    align-items: center; /* Vertically aligns text and arrow */
+    justify-content: center;
+    background-color: #5107B8;
+    color: white;
+    width: 432px; /* Fixed width */
+    height: 72px; /* Fixed height */
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+    border-radius: 4px;
+    margin-top: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    gap: 10px; /* Space between text and arrow */
+}
 
-        .future-proof-section .button60:hover {
-            background-color: #3a006e;
-        }
+.future-proof-section .button60:hover {
+    background-color: #3a006e;
+}
 
-        .future-proof-section .button60:hover .arrow {
-            transform: translateX(5px);
-            transition: transform 0.3s ease-in-out;
-        }
+.future-proof-section .button60 .arrow {
+    transition: transform 0.3s ease-in-out;
+}
+
+.future-proof-section .button60:hover .arrow {
+    transform: translateX(5px);
+}
+
 
         /* Responsive adjustments */
         @media (max-width: 768px) {
@@ -626,11 +625,13 @@ header.scrolled .menu-icon {
         /* Responsive styles */
         @media (max-width: 768px) {
             .certified-trusted {
-                flex-wrap: nowrap; /* Keep items in one row */
+                flex-wrap: nowrap;
+                /* Keep items in one row */
                 flex-direction: row;
                 justify-content: space-between;
                 gap: 10px;
-                overflow-x: auto; /* Prevent breaking layout */
+                overflow-x: auto;
+                /* Prevent breaking layout */
                 padding: 10px;
             }
 
@@ -640,13 +641,15 @@ header.scrolled .menu-icon {
                 padding-top: 10%;
                 align-items: center;
                 text-align: center;
-                min-width: 150px; /* Prevent squishing */
+                min-width: 150px;
+                /* Prevent squishing */
             }
 
             .trusted-images {
                 justify-content: center;
                 flex-wrap: nowrap;
-                overflow-x: auto; /* Allow scrolling if needed */
+                overflow-x: auto;
+                /* Allow scrolling if needed */
             }
         }
 
@@ -693,45 +696,49 @@ header.scrolled .menu-icon {
 
 
         .footer-bottom {
-    display: flex;
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 5%;
-    font-size: 14px;
-    color: #666;
-    background-color: #f8f8f8;
-}
+            display: flex;
+            flex-wrap: wrap;
+            /* Allows wrapping on smaller screens */
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+            font-size: 14px;
+            color: #666;
+            background-color: #f8f8f8;
+        }
 
-.footer-links-bottom {
-    display: flex;
-    flex-wrap: wrap; /* Allows links to wrap if needed */
-    gap: 10px;
-}
+        .footer-links-bottom {
+            display: flex;
+            flex-wrap: wrap;
+            /* Allows links to wrap if needed */
+            gap: 10px;
+        }
 
-.footer-links-bottom a {
-    text-decoration: none;
-    color: #666;
-    margin: 0 10px;
-    white-space: nowrap; /* Prevents links from breaking into two lines */
-}
+        .footer-links-bottom a {
+            text-decoration: none;
+            color: #666;
+            margin: 0 10px;
+            white-space: nowrap;
+            /* Prevents links from breaking into two lines */
+        }
 
-.footer-links-bottom a:hover {
-    color: #000;
-}
+        .footer-links-bottom a:hover {
+            color: #000;
+        }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .footer-bottom {
-        flex-direction: column; /* Stack items on smaller screens */
-        text-align: center;
-        gap: 10px;
-    }
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .footer-bottom {
+                flex-direction: column;
+                /* Stack items on smaller screens */
+                text-align: center;
+                gap: 10px;
+            }
 
-    .footer-links-bottom {
-        justify-content: center;
-    }
-}
+            .footer-links-bottom {
+                justify-content: center;
+            }
+        }
 
 
         @media (max-width: 768px) {
@@ -781,18 +788,23 @@ header.scrolled .menu-icon {
         }
 
         .grid45 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two boxes per row */
-    gap: 20px;
-}
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            /* Two boxes per row */
+            gap: 20px;
+        }
 
         ul {
             padding-left: 5%;
         }
 
-       
+
 
         h2 {
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 28.8px;
+            letter-spacing: -0.02em;
             color: #5107B8;
             margin-bottom: 20px;
         }
@@ -806,10 +818,11 @@ header.scrolled .menu-icon {
         }
 
         @media (max-width: 768px) {
-    .grid45 {
-        grid-template-columns: 1fr; /* One box per row on small screens */
-    }
-}
+            .grid45 {
+                grid-template-columns: 1fr;
+                /* One box per row on small screens */
+            }
+        }
 
 
 
@@ -834,7 +847,7 @@ header.scrolled .menu-icon {
         }
 
         .highlight46 {
-           
+
             font-weight: bold;
         }
 
@@ -847,10 +860,17 @@ header.scrolled .menu-icon {
         }
 
         .card46 h3 {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22.4px;
             margin-bottom: 10px;
         }
 
-        .card46 p, .card46 li {
+        .card46 p,
+        .card46 li {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22.4px;
             margin-bottom: 10px;
         }
 
@@ -904,30 +924,35 @@ header.scrolled .menu-icon {
         <div class="header-section23">
 
             <p class="italic-text">In today’s hyper-connected world, businesses need agile, scalable, and cost-effective
-                workforce solutions to stay ahead. Gritbyte Labs specializes in building high-performance offshore
-                teams, equipping businesses with top-tier talent, seamless operations, and end-to-end management to
+                workforce solutions to stay ahead. Gritbyte Labs <br>specializes in building high-performance offshore
+                teams, equipping businesses with top-tier talent, seamless operations, and end-to-end <br>management to
                 accelerate growth while ensuring operational excellence.</p>
         </div>
 
     </div>
     <section class="section46">
-        <h2 class="highlight46" style="text-align: left;"><span style="color: #5107B8;">Our Offshore Team Management Services</span></h2>
+        <h2 class="highlight46" style="text-align: left;"><span style="color: #5107B8;">Our Offshore Team Management
+                Services</span></h2>
         <div class="container46">
             <div class="card46">
                 <h3 class="highlight46">1. Dedicated Offshore Teams:</h3>
-                <p>a. Build tailor-made, high-efficiency teams aligned with your unique project and operational goals.</p>
-                <p><span class="highlight46">b. Expertise Includes:</span> XR developers, AI engineers, QA testers, 3D designers, and more.</p>
+                <p>a. Build tailor-made, high-efficiency teams aligned with your unique project and operational goals.
+                </p>
+                <p><span class="highlight46">b. Expertise Includes:</span> XR developers, AI engineers, QA testers, 3D
+                    designers, and more.</p>
             </div>
 
             <div class="card46">
                 <h3 class="highlight46">2. End-to-End Recruitment:</h3>
                 <p>a. Gain access to a global talent pool, with expert sourcing, screening, and onboarding.</p>
-                <p><span class="highlight46">b. Industry Focus:</span> Gaming, retail, healthcare, and manufacturing.</p>
+                <p><span class="highlight46">b. Industry Focus:</span> Gaming, retail, healthcare, and manufacturing.
+                </p>
             </div>
 
             <div class="card46">
                 <h3 class="highlight46">3. Full-Cycle Team Management:</h3>
-                <p>We handle everything — from payroll and performance tracking to compliance and day-to-day operations — so you can focus on scaling your business.</p>
+                <p>We handle everything — from payroll and performance tracking to compliance and day-to-day operations
+                    — so you can focus on scaling your business.</p>
             </div>
 
             <div class="card46">
@@ -937,7 +962,8 @@ header.scrolled .menu-icon {
 
             <div class="card46">
                 <h3 class="highlight46">5. Integrated Communication and Collaboration:</h3>
-                <p>Ensure real-time communication and smooth project execution with tools like Slack, Jira, and Zoom, integrating offshore teams effortlessly into your existing workflows.</p>
+                <p>Ensure real-time communication and smooth project execution with tools like Slack, Jira, and Zoom,
+                    integrating offshore teams effortlessly into your existing workflows.</p>
             </div>
         </div>
     </section>
@@ -990,16 +1016,22 @@ header.scrolled .menu-icon {
             <div class="grid45">
                 <div class="card45">
                     <h3>Invitor (South Korea)</h3>
-                    <p><span class="highlight45">1. Challenge:</span> Rapidly scaling operations while maintaining cost efficiency.</p>
-                    <p><span class="highlight45">2. Solution:</span> Built and managed a dedicated offshore team, streamlining workflows and expanding capabilities.</p>
-                    <p><span class="highlight45">3. Impact:</span> 30% cost reduction and secured contracts with Hyundai & Samsung.</p>
+                    <p><span class="highlight45">1. Challenge:</span> Rapidly scaling operations while maintaining cost
+                        efficiency.</p>
+                    <p><span class="highlight45">2. Solution:</span> Built and managed a dedicated offshore team,
+                        streamlining workflows and expanding capabilities.</p>
+                    <p><span class="highlight45">3. Impact:</span> 30% cost reduction and secured contracts with Hyundai
+                        & Samsung.</p>
                 </div>
-            
+
                 <div class="card45">
                     <h3>Gamelin (Dubai)</h3>
-                    <p><span class="highlight45">1. Challenge:</span> Enhancing game quality while optimizing testing costs.</p>
-                    <p><span class="highlight45">2. Solution:</span> Provided a high-performance QA team, ensuring seamless gameplay and top-tier performance.</p>
-                    <p><span class="highlight45">3. Impact:</span> Helped secure high-profile contracts with L'Oréal and Dubai government organizations.</p>
+                    <p><span class="highlight45">1. Challenge:</span> Enhancing game quality while optimizing testing
+                        costs.</p>
+                    <p><span class="highlight45">2. Solution:</span> Provided a high-performance QA team, ensuring
+                        seamless gameplay and top-tier performance.</p>
+                    <p><span class="highlight45">3. Impact:</span> Helped secure high-profile contracts with L'Oréal and
+                        Dubai government organizations.</p>
                 </div>
             </div>
         </div>
@@ -1022,7 +1054,7 @@ header.scrolled .menu-icon {
                     <p>At Gritbyte Labs, we specialize in XR, AI, and scalable technology solutions that empower
                         businesses worldwide. With 260+ successful projects across 20+ countries, we’re your trusted
                         partner for innovation.</p>
-                        <a href="#" class="arrow">&#10145;</a>
+                    <a href="#" class="arrow">&#10145;</a>
                 </div>
                 <div class="certified-trusted">
                     <div class="certified">
@@ -1109,19 +1141,19 @@ header.scrolled .menu-icon {
             <a href="privacypolicy.html">Privacy Policy </a>
         </div>
     </div>
-    
+
 
     <script>
         function toggleMenu() {
             document.getElementById("nav-menu").classList.toggle("open");
         }
-    
+
         const header = document.getElementById('header');
         const logoImage = document.getElementById('logo');
         const ctaButton = document.querySelector('.cta-button'); // Select the button
         const originalLogoSrc = 'hel.png';
         const scrolledLogoSrc = 'Gritbyte Logo 1 (1).png';
-    
+
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) {
                 header.classList.add('scrolled');
@@ -1134,13 +1166,13 @@ header.scrolled .menu-icon {
             }
         });
     </script>
-     <script>
-       document.getElementById("currentDate").textContent = new Date().toLocaleDateString('en-US', {
-           year: 'numeric',
-           month: 'long',
-           day: 'numeric'
-       });
-   </script>
+    <script>
+        document.getElementById("currentDate").textContent = new Date().toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+    </script>
 </body>
 
 </html>
