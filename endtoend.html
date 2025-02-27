@@ -14,7 +14,8 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: Arial, sans-serif;
+            font-family: 'Inter', sans-serif;
+
         }
 
         body {
@@ -45,16 +46,19 @@
         }
 
         .menu-icon {
-    display: none;
-    font-size: 30px;
-    cursor: pointer;
-    color: white; /* Default color before scrolling */
-    transition: color 0.3s ease; /* Smooth transition */
-}
+            display: none;
+            font-size: 30px;
+            cursor: pointer;
+            color: white;
+            /* Default color before scrolling */
+            transition: color 0.3s ease;
+            /* Smooth transition */
+        }
 
-header.scrolled .menu-icon {
-    color: black; /* Change to black when scrolled */
-}
+        header.scrolled .menu-icon {
+            color: black;
+            /* Change to black when scrolled */
+        }
 
 
 
@@ -83,46 +87,20 @@ header.scrolled .menu-icon {
         }
 
         nav a.cta-button {
-    background-color: #5107B8;
-    color: white !important;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: 600;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.header.scrolled nav a.cta-button {
-    color: white !important; /* Ensures text stays white */
-}
-
-        .hero-section {
-            text-align: center;
-            position: relative;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            padding: 20px;
-            padding-bottom: 60px;
-        }
-
-        .hero-section h1 {
-            text-align: left;
-            color: white;
-            font-size: 36px;
+            background-color: #5107B8;
+            color: white !important;
+            padding: 10px 20px;
+            border-radius: 5px;
             font-weight: 600;
-            margin-bottom: 20px;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
 
-        .hero-background img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: -1;
+        .header.scrolled nav a.cta-button {
+            color: white !important;
+            /* Ensures text stays white */
         }
+
+
 
         @media (max-width: 768px) {
             header {
@@ -131,7 +109,7 @@ header.scrolled .menu-icon {
 
             .menu-icon {
                 display: block;
-                
+
             }
 
             #nav-menu {
@@ -203,25 +181,32 @@ header.scrolled .menu-icon {
             padding-bottom: 60px;
         }
 
+
         .hero-section h1 {
-            text-shadow: 2px 2px 4px rgb(0, 0, 0); /* X-offset, Y-offset, blur-radius, color */
+            text-shadow: 2px 2px 4px rgb(0, 0, 0);
+            /* X-offset, Y-offset, blur-radius, color */
 
             text-align: left;
+            line-height: 57.6px;
             color: white;
-            font-size: 36px;
-            font-weight: 600;
+            font-size: 48px;
+            letter-spacing: -0.02em;
+            font-weight: 700;
             margin-bottom: 20px;
         }
 
         .hero-section p {
-            text-shadow: 2px 2px 4px rgb(0, 0, 0); /* X-offset, Y-offset, blur-radius, color */
+            text-shadow: 2px 2px 4px rgb(0, 0, 0);
+            /* X-offset, Y-offset, blur-radius, color */
 
+            font-weight: 600;
+            line-height: 22.4px;
             padding-right: 50%;
             text-align: left;
             color: white;
             margin-top: 10px;
-            font-size: 14px;
-            opacity: 0.8;
+            font-size: 16px;
+    
         }
 
         .demo-button {
@@ -255,14 +240,14 @@ header.scrolled .menu-icon {
         }
 
         .container-heading {
+            line-height: 28.8px;
             margin-top: 20px;
             text-align: left;
-            font-size: 1.5rem;
-            font-weight: bold;
+            font-size: 24px;
+            font-weight: 800;
             margin-bottom: 20px;
-            color: #4A00E0;
-            /* font-family: "McKinsey Sans", "Helvetica Neue", Calibri, Corbel, Helvetica, Roboto, Droid, sans-serif; */
-
+            color: #5107B8;
+            letter-spacing: -0.02em;
             padding-left: 5%;
         }
 
@@ -281,23 +266,23 @@ header.scrolled .menu-icon {
 
         .card h2 {
             color: #000000;
-            font-size: clamp(1.2rem, 2vw, 2rem);
-            font-weight: bold;
+            font-size: 16px;
+            font-weight: 700;
             /* font-family: "Bower", Georgia, "Times New Roman", serif; */
-            line-height: 1.4;
+            line-height: 22.4px;
             margin-bottom: 10px;
         }
 
         /* a. and b. formatting with left gap */
         .card .section {
-            /* font-family: "McKinsey Sans", "Helvetica Neue", Calibri, Corbel, Helvetica, Roboto, Droid, sans-serif; */
-            line-height: 1.5rem;
-            font-size: clamp(1rem, 1.5vw, 1.25rem);
+            line-height: 22.4px;
+            font-size: 16px;
+            font-weight: 400;
             display: flex;
             /* gap: 10px; */
             margin-bottom: 5px;
             padding-left: 20px;
-            font-weight: 300;
+           
             /* Adds left space */
         }
 
@@ -318,6 +303,7 @@ header.scrolled .menu-icon {
             padding-left: 65px;
             /* Aligns Roman numerals under b. */
         }
+
         .card ul.hello {
             padding-left: 35px;
             /* Aligns Roman numerals under b. */
@@ -329,20 +315,17 @@ header.scrolled .menu-icon {
         }
 
         .card ul.hello li {
-            font-weight: 300;
-            color: #000000;
-            line-height: 1.8;
-            font-size: clamp(1rem, 1.5vw, 1.25rem);
+            line-height: 22.4px;
+            font-size: 16px;
+            font-weight: 400;
             /* font-family: "McKinsey Sans", "Helvetica Neue", Calibri, Corbel, Helvetica, Roboto, Droid, sans-serif; */
             margin-bottom: 5px;
         }
 
         .card ul.roman li {
-            font-weight: 300;
-            color: #333;
-            line-height: 1.8;
-            font-size: clamp(1rem, 1.5vw, 1.25rem);
-            /* font-family: "McKinsey Sans", "Helvetica Neue", Calibri, Corbel, Helvetica, Roboto, Droid, sans-serif; */
+            line-height: 22.4px;
+            font-size: 16px;
+            font-weight: 400;
             margin-bottom: 5px;
         }
 
@@ -386,11 +369,11 @@ header.scrolled .menu-icon {
         }
 
         h2 {
-            color: #4A00E0;
-            font-size: clamp(1.5rem, 2vw, 2rem);
-            font-weight: bold;
+            color: #5107B8;
+            font-size: 24px;
+            font-weight: 800;
             /* font-family: "Bower", Georgia, "Times New Roman", serif; */
-            line-height: 1.4;
+            line-height: 28.8px;
             margin-bottom: 1rem;
             margin-top: 0;
             min-height: 40px;
@@ -401,10 +384,9 @@ header.scrolled .menu-icon {
         }
 
         .card2 ul li {
-            font-weight: 300;
-            color: #333;
-            line-height: 1.8;
-            font-size: clamp(1rem, 1.5vw, 1.25rem);
+            line-height: 22.4px;
+            font-size: 16px;
+            font-weight: 400;
             /* font-family: "McKinsey Sans", "Helvetica Neue", Calibri, Corbel, Helvetica, Roboto, Droid, sans-serif; */
         }
 
@@ -437,22 +419,27 @@ header.scrolled .menu-icon {
         }
 
         .header-section23 h1 {
-            color: #4A00E0;
-            font-size: clamp(2rem, 3vw, 3.25rem);
+            letter-spacing: -0.02em;
+            color: #5107B8;
+            font-size: 48px;
             /* font-family: "Bower", Georgia, "Times New Roman", serif; */
-            font-weight: 300;
-            line-height: 1.2;
+            font-weight: 700;
+            line-height: 57.6px;
         }
 
         .italic-text {
-         
+
             color: #666;
             font-size: clamp(1rem, 1.5vw, 1.25rem);
         }
 
         .header-section23 p {
-            color: #333;
-            line-height: 1.6;
+            
+            color: #000000;
+            font-size: 16px;
+            /* font-family: "Bower", Georgia, "Times New Roman", serif; */
+            font-weight: 400;
+            line-height: 22.4px;
         }
 
         .future-proof-section {
@@ -691,11 +678,13 @@ header.scrolled .menu-icon {
         /* Responsive styles */
         @media (max-width: 768px) {
             .certified-trusted {
-                flex-wrap: nowrap; /* Keep items in one row */
+                flex-wrap: nowrap;
+                /* Keep items in one row */
                 flex-direction: row;
                 justify-content: space-between;
                 gap: 10px;
-                overflow-x: auto; /* Prevent breaking layout */
+                overflow-x: auto;
+                /* Prevent breaking layout */
                 padding: 10px;
             }
 
@@ -705,13 +694,15 @@ header.scrolled .menu-icon {
                 padding-top: 10%;
                 align-items: center;
                 text-align: center;
-                min-width: 150px; /* Prevent squishing */
+                min-width: 150px;
+                /* Prevent squishing */
             }
 
             .trusted-images {
                 justify-content: center;
                 flex-wrap: nowrap;
-                overflow-x: auto; /* Allow scrolling if needed */
+                overflow-x: auto;
+                /* Allow scrolling if needed */
             }
         }
 
@@ -758,45 +749,49 @@ header.scrolled .menu-icon {
 
 
         .footer-bottom {
-    display: flex;
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 5%;
-    font-size: 14px;
-    color: #666;
-    background-color: #f8f8f8;
-}
+            display: flex;
+            flex-wrap: wrap;
+            /* Allows wrapping on smaller screens */
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+            font-size: 14px;
+            color: #666;
+            background-color: #f8f8f8;
+        }
 
-.footer-links-bottom {
-    display: flex;
-    flex-wrap: wrap; /* Allows links to wrap if needed */
-    gap: 10px;
-}
+        .footer-links-bottom {
+            display: flex;
+            flex-wrap: wrap;
+            /* Allows links to wrap if needed */
+            gap: 10px;
+        }
 
-.footer-links-bottom a {
-    text-decoration: none;
-    color: #666;
-    margin: 0 10px;
-    white-space: nowrap; /* Prevents links from breaking into two lines */
-}
+        .footer-links-bottom a {
+            text-decoration: none;
+            color: #666;
+            margin: 0 10px;
+            white-space: nowrap;
+            /* Prevents links from breaking into two lines */
+        }
 
-.footer-links-bottom a:hover {
-    color: #000;
-}
+        .footer-links-bottom a:hover {
+            color: #000;
+        }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .footer-bottom {
-        flex-direction: column; /* Stack items on smaller screens */
-        text-align: center;
-        gap: 10px;
-    }
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .footer-bottom {
+                flex-direction: column;
+                /* Stack items on smaller screens */
+                text-align: center;
+                gap: 10px;
+            }
 
-    .footer-links-bottom {
-        justify-content: center;
-    }
-}
+            .footer-links-bottom {
+                justify-content: center;
+            }
+        }
 
 
         @media (max-width: 768px) {
@@ -848,7 +843,7 @@ header.scrolled .menu-icon {
         <div class="hero-background">
             <img src="Rectangle 23.png" alt="Hero Background">
         </div>
-        <h1>End–to–End Solutions</h1>
+        <h1>End – to – End Solutions</h1>
         <p id="currentDate"></p>
 
 
@@ -918,7 +913,7 @@ header.scrolled .menu-icon {
             </div>
 
             <div class="card">
-                <h2>6. Cross-Platform & AI-Integrated Solutions:  </h2>
+                <h2>6. Cross-Platform & AI-Integrated Solutions: </h2>
                 <p class="section">Build seamless, high-performance XR
                     applications
                     optimized for VR headsets, AR-enabled mobile devices, immersive LED walls, and cloud-based
@@ -933,12 +928,17 @@ header.scrolled .menu-icon {
         <div class="container">
             <div class="card">
                 <h2>1. Value to Clients </h2>
-                
+
                 <ul class="hello">
-                    <li><strong>a.Enhanced Training Outcomes: </strong> Immerse employees in hyper-realistic, risk-free simulations that accelerate skill acquisition, boost retention, and slash training costs.</li>
-                    <li><strong>b. Next-Level Customer Engagement:</strong>  Captivate audiences with interactive virtual showrooms and immersive brand experiences that drive higher purchase intent and long-term loyalty.</li>
-                    <li><strong>c. Optimized Operational Efficiency:</strong>  Streamline workflows and cut costs with AI-driven XR simulations, minimizing dependence on physical setups and maximizing resource utilization.</li>
-                    
+                    <li><strong>a.Enhanced Training Outcomes: </strong> Immerse employees in hyper-realistic, risk-free
+                        simulations that accelerate skill acquisition, boost retention, and slash training costs.</li>
+                    <li><strong>b. Next-Level Customer Engagement:</strong> Captivate audiences with interactive virtual
+                        showrooms and immersive brand experiences that drive higher purchase intent and long-term
+                        loyalty.</li>
+                    <li><strong>c. Optimized Operational Efficiency:</strong> Streamline workflows and cut costs with
+                        AI-driven XR simulations, minimizing dependence on physical setups and maximizing resource
+                        utilization.</li>
+
                 </ul>
             </div>
 
@@ -947,27 +947,30 @@ header.scrolled .menu-icon {
 
             <div class="card">
                 <h2>2. Industries Transforming with XR: </h2>
-                
+
                 <ul class="hello">
                     <li><strong>Aviation:</strong> AR-driven virtual try-ons, personalized shopping experiences.</li>
-                    <li><strong>Healthcare:</strong>  AI-powered surgical simulations, interactive patient education.</li>
-                    <li><strong>Retail:</strong>  Virtual storefronts, 360° product customization.</li>
-                    <li><strong>Education:</strong>   Immersive learning platforms for enhanced knowledge retention. </li>
-                    <li><strong>Manufacturing:</strong>   Digital twins, hands-on equipment training.</li>
+                    <li><strong>Healthcare:</strong> AI-powered surgical simulations, interactive patient education.
+                    </li>
+                    <li><strong>Retail:</strong> Virtual storefronts, 360° product customization.</li>
+                    <li><strong>Education:</strong> Immersive learning platforms for enhanced knowledge retention. </li>
+                    <li><strong>Manufacturing:</strong> Digital twins, hands-on equipment training.</li>
                 </ul>
             </div>
 
             <div class="card">
                 <h2>3. Key Stats:</h2>
-                
+
                 <ul class="hello">
-                    <li><strong>30% Faster Learning:</strong> AI-enhanced XR solutions improve knowledge retention and skill mastery. </li>
-                    <li><strong>40% Cost Reduction:</strong>  Reduce physical training expenses and logistics overhead with scalable virtual environments. </li>
-                   
+                    <li><strong>30% Faster Learning:</strong> AI-enhanced XR solutions improve knowledge retention and
+                        skill mastery. </li>
+                    <li><strong>40% Cost Reduction:</strong> Reduce physical training expenses and logistics overhead
+                        with scalable virtual environments. </li>
+
                 </ul>
             </div>
 
-           
+
         </div>
     </div>
 
@@ -1265,7 +1268,7 @@ header.scrolled .menu-icon {
                 </ul>
             </div>
         </div>
-        
+
     </div>
 
     <div class="future-proof-section">
@@ -1285,7 +1288,7 @@ header.scrolled .menu-icon {
                     <p>At Gritbyte Labs, we specialize in XR, AI, and scalable technology solutions that empower
                         businesses worldwide. With 260+ successful projects across 20+ countries, we’re your trusted
                         partner for innovation.</p>
-                        <a href="#" class="arrow">&#10145;</a>
+                    <a href="#" class="arrow">&#10145;</a>
                 </div>
                 <div class="certified-trusted">
                     <div class="certified">
@@ -1372,19 +1375,19 @@ header.scrolled .menu-icon {
             <a href="privacypolicy.html">Privacy Policy </a>
         </div>
     </div>
-    
+
 
     <script>
         function toggleMenu() {
             document.getElementById("nav-menu").classList.toggle("open");
         }
-    
+
         const header = document.getElementById('header');
         const logoImage = document.getElementById('logo');
         const ctaButton = document.querySelector('.cta-button'); // Select the button
         const originalLogoSrc = 'hel.png';
         const scrolledLogoSrc = 'Gritbyte Logo 1 (1).png';
-    
+
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) {
                 header.classList.add('scrolled');
@@ -1397,7 +1400,7 @@ header.scrolled .menu-icon {
             }
         });
     </script>
-     <script>
+    <script>
         document.getElementById("currentDate").textContent = new Date().toLocaleDateString('en-US', {
             year: 'numeric',
             month: 'long',
