@@ -10,12 +10,20 @@
 
     <title>Contact Us</title>
     <style>
-        * {
+          * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: 'Inter', sans-serif;
         }
+
+        html,
+        body {
+            overflow-x: hidden;
+            width: 100%;
+        }
+
+
 
         body {
             background-color: #f8f8f8;
@@ -165,8 +173,52 @@
             }
         }
 
+        .hero-section {
+            text-align: center;
+            position: relative;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 20px;
+            padding-bottom: 60px;
+        }
+
+        .hero-section h1 {
+            text-shadow: 2px 2px 4px rgb(0, 0, 0);
+            /* X-offset, Y-offset, blur-radius, color */
+
+            text-align: left;
+            color: white;
+            font-size: 36px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .hero-background img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
 
 
+
+        .hero-section {
+          
+            text-align: center;
+            position: relative;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            /* align-items: center; */
+            padding: 20px;
+            padding-bottom: 60px;
+        }
 
         .hero-section {
             text-align: center;
@@ -181,25 +233,21 @@
         }
 
         .hero-section h1 {
-            text-shadow: 2px 2px 4px rgb(0, 0, 0);
-            /* X-offset, Y-offset, blur-radius, color */
-            letter-spacing: -0.02em;
-            /* Approx. -2% letter spacing */
-            line-height: 57.6px;
             text-align: left;
             color: white;
             font-size: 48px;
             font-weight: 700;
             margin-bottom: 20px;
-        }
+            line-height: 57.6px;
 
+        }
 
         .hero-section p {
             text-shadow: 2px 2px 4px rgb(0, 0, 0);
             /* X-offset, Y-offset, blur-radius, color */
-            font-weight: 400;
-            padding-right: 50%;
             line-height: 24px;
+            /* padding: 0 15%; */
+            font-weight: 400;
             text-align: left;
             color: white;
             margin-top: 10px;
@@ -207,26 +255,32 @@
             opacity: 0.8;
         }
 
-        .demo-button {
-            background-color: #7e00ff;
-            color: white;
-            padding: 15px 40px;
-            margin-top: 10px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 14px;
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 32px;
+                line-height: 40px;
+            }
+
+            .hero-section p {
+                font-size: 16px;
+                line-height: 22px;
+                /* padding: 0 10%; */
+            }
         }
 
-        .hero-background img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: -1;
+        @media (max-width: 480px) {
+            .hero-section h1 {
+                font-size: 28px;
+                line-height: 36px;
+            }
+
+            .hero-section p {
+                font-size: 14px;
+                line-height: 20px;
+                /* padding: 0 8%; */
+            }
         }
+
 
         .container123 {
             padding: 5%;
@@ -448,7 +502,7 @@
         .input-group.radio-group {
             display: flex;
             align-items: center;
-            gap: 80px;
+            gap: 10px;
             /* Space between elements */
         }
 
